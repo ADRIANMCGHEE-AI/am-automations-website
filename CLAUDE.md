@@ -1,0 +1,20 @@
+# AM Automations website
+
+Original handover (in it, `source/` means this folder): @transfer/CLAUDE.md
+Also see transfer/SETUP.md, transfer/DATA_TRANSFER.md, README.md and docs/.
+Read AGENTS.md: this uses Next.js 16, so check `node_modules/next/dist/docs/` before changing Next.js APIs.
+
+## Commands (run in this folder)
+```sh
+npm ci
+npm run dev          # http://localhost:3000
+npm run lint
+npm run typecheck
+npm run build        # static export to out/
+```
+Before committing a change, run lint, typecheck and build.
+
+## Repository rules
+- This repository holds only the public AM Automations site. Cheshire Gas has its own separate repository.
+- Never add Cheshire Gas or LLK to this site.
+- Do not change the live domain's routing or deployment unless the owner asks.

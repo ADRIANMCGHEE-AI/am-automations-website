@@ -1,0 +1,23 @@
+{
+  "title": "AM Automations website",
+  "export_date": "2026-11-26",
+  "saved_version": 6,
+  "source_commit": "6461c64eb4acc934be73ea72647a65ff58b25af8",
+  "original_url": "https://adrianmcgheeautomations.com",
+  "source_file_count": 53,
+  "excluded_tracked_files": [
+    ".openai/hosting.json"
+  ],
+  "exclusion_reason": "Original hosting identity omitted from the portable copy; application files are unchanged.",
+  "validation": [
+    "npm ci",
+    "npm run typecheck",
+    "npm run build"
+  ],
+  "runtime": "Node.js v24.22.3, npm 11.19.1",
+  "application_source_modified": false,
+  "browser_qa_repeated_during_export": false,
+  "contains_browser_local_user_data": false,
+  "contains_source_seed_data": false,
+  "contains_credentials": false
+}
