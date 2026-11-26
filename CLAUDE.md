@@ -25,5 +25,8 @@ Before committing a change, run lint, typecheck and build.
   Other branches get preview deployments.
 - Build settings: Next.js preset, `npm ci`, `npm run build`, Node 24.x.
 - Vercel Authentication is intentionally off, by the owner's decision on 26 Nov 2026. The staging URLs are public.
-- The live domain https://adrianmcgheeautomations.com is still served by the original host.
-  Do not add the domain to Vercel or change DNS until the owner confirms that staging has been checked.
+- `adrianmcgheeautomations.com` and `www` (308 redirect to the root domain) were added and verified
+  on this Vercel project on 26 Nov 2026, at the owner's request.
+- DNS is managed at Cloudflare. Until the owner changes it there, the domain still points to the original host.
+  To switch: set an `A` record for `@` to `76.76.21.21` and a `CNAME` for `www` to `cname.vercel-dns.com`,
+  both "DNS only". Leave the MX and TXT records as they are.
