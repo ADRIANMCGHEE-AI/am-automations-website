@@ -18,3 +18,12 @@ Before committing a change, run lint, typecheck and build.
 - This repository holds only the public AM Automations site. Cheshire Gas has its own separate repository.
 - Never add Cheshire Gas or LLK to this site.
 - Do not change the live domain's routing or deployment unless the owner asks.
+
+## Deployment (Vercel)
+- Vercel project `am-automations-website` (Hobby account `adrian-1921`) is connected to this repository.
+  Each push to `main` deploys to production at https://am-automations-website.vercel.app.
+  Other branches get preview deployments.
+- Build settings: Next.js preset, `npm ci`, `npm run build`, Node 24.x.
+- Vercel Authentication (Standard Protection) is on, so `*.vercel.app` URLs require the owner's Vercel login.
+- The live domain https://adrianmcgheeautomations.com is still served by the original host.
+  Do not add the domain to Vercel or change DNS until the owner confirms that staging has been checked.
