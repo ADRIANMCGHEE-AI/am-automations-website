@@ -16,7 +16,7 @@ export const site = {
 export const socialLinks = [
   {
     label: "LinkedIn",
-    href: "https://www.linkedin.com/in/adrian-mcghee-automations/",
+    href: "https://www.linkedin.com/company/adrian-mcghee-automations/",
   },
   { label: "X", href: "https://x.com/AdrianMcgheeAI" },
 ] as const;
