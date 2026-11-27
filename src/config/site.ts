@@ -13,6 +13,13 @@ export const site = {
   description:
     "Websites, quotation follow-ups and connected systems for UK businesses. Practical automation from a Greater Manchester sales and operations specialist.",
 };
+export const socialLinks = [
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/adrian-mcghee-automations/",
+  },
+  { label: "X", href: "https://x.com/AdrianMcgheeAI" },
+] as const;
 export const whatsappUrl = `https://wa.me/${site.whatsappDigits}?text=${encodeURIComponent(site.whatsappMessage)}`;
 export const navigation = [
   { label: "Services", href: "/services" },
